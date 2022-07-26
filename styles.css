@@ -1,21 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .wrapper {
     width: 100%;
     margin: 0 auto;
+    background: lightgray;
 }
-    .header {
-        height: 140px;
-        padding: 16px;
-        background: plum;
-        border: 1px solid indigo;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-    }
+.section {
+    height: 140px;
+    padding: 5px;
+    background: plum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
 
-    .header-item{
-        width: 33%;
-        height: 100px;
-        border: 1px solid darkslategray;
-        background: skyblue;
-    }
+.item{
+    width: 33%;
+    height: 100px;
+    background: skyblue;
+    flex: 1 1 0%;
+    display: flex; /* we also want this to be a flex container, as well as a flex item*/
+    padding: 15px;
+}
+
+.item.span-2 {
+    height: 100px;
+    background: goldenrod;
+    flex: 2 1 0%;
+}
+
+.item.split-1 {
+    background: pink;
+    flex: 0 1 13%;
+}
+
+.middle {
+    width: 50%;
+    background: #fff;
+    padding: 5px;
+    margin: 0px 5px;
+    flex: 2 1 0%;
+}
+
+.main-content {
+}
+
+.single-col {
+    background: red;
+    min-height: 100px;
+    flex: 1;
+    padding: 15px;
+}
+
+.two-col {
+    background: red;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.small-col {
+    background: purple;
+    flex: 1 1 auto;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+    min-height: 32px;
+}
+
+.small-col:nth-child(2) {
+    margin: 0px;
+}
+
+
+
+
